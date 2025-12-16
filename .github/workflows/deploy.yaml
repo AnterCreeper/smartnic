@@ -31,7 +31,7 @@ jobs:
       - name: build pages
         run: |
           echo ${{ github.workspace }}
-          pnpm build
+          pnpm docs:build
       - name: jekyll pages
         uses: actions/jekyll-build-pages@v1
         with:
