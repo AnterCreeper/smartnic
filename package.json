@@ -1,0 +1,27 @@
+{
+  "name": "smartnic-doc",
+  "version": "1.0.0",
+  "description": "An Overview of SmartNIC Technology",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnterCreeper/smartnic-doc.git"
+  },
+  "keywords": [],
+  "author": "Zhihao Wang",
+  "license": "CC BY-NC-SA 4.0",
+  "bugs": {
+    "url": "https://github.com/AnterCreeper/smartnic-doc/issues"
+  },
+  "homepage": "https://antercreeper.github.io/smartnic-doc",
+  "devDependencies": {
+    "markdown-it-mathjax3": "^5.2.0",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.25"
+  }
+}
