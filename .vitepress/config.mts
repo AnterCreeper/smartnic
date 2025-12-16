@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: "/smartnic-doc/",
   lang: 'zh-CN',
   title: 'SmartNIC Getting Started',
   description: 'An Overview of SmartNIC Technology',
@@ -11,6 +12,9 @@ export default defineConfig({
   markdown: {
     math: true
   },
+  head: [
+    ["link", { rel: "icon", href: `/smartnic-doc/favicon.ico` }],  
+  ],
   themeConfig: {
     i18nRouting: false,
     sidebar: {
