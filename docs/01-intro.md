@@ -154,14 +154,26 @@ Tonic 是第一个开源可编程传输协议的 SmartNIC 架构, 支持 100Gbps
 
 > Arashloo, Mina Tahmasbi, Alexey Lavrov, Manya Ghobadi, Jennifer Rexford, David Walker, and David Wentzlaff, "Enabling Programmable Transport Protocols in High-Speed NICs", NSDI 2020, 93–109. https://www.usenix.org/conference/nsdi20/presentation/arashloo.
 
-#### ACCL
+#### ETH Zurich Systems & Xilinx ACCL
 [https://github.com/Xilinx/ACCL](https://github.com/Xilinx/ACCL)  
 ACCL(Alveo Collective Communication Library) 是一个 Vitis 内核及其相关的 XRT 驱动程序，它们共同为 Xilinx FPGA 提供类似 MPI 的通信机制, 于此同时也支持作为 CPU 应用的集合通信卸载引擎。ACCL 旨在使 FPGA 中的计算内核能够在主机监控下直接通信，而无需在 FPGA 和主机之间传输数据。ACCL 使用与 Vitis 兼容的 TCP 和 UDP 协议栈，通过以太网将 FPGA 集群 直接连接起来，在 Alveo 卡上最高可达 100 Gbps。
 <div align="center">
 <img src="../assets/01/accl.png" alt="ACCL Diagram" width="512">
 </div>
 
-> He, Zhenhao, Dario Korolija, Yu Zhu, et al. 2024, "ACCL+: An FPGA-Based Collective Engine for Distributed Applications", OSDI 24, 211–31. https://www.usenix.org/conference/osdi24/presentation/he.
+> He Zhenhao, Dario Korolija, Yu Zhu, et al. 2024, "ACCL+: An FPGA-Based Collective Engine for Distributed Applications", OSDI 24, 211–31. https://www.usenix.org/conference/osdi24/presentation/he.
+
+#### ETH Zurich Coyote
+[https://github.com/fpgasystems/Coyote](https://github.com/fpgasystems/Coyote)  
+[https://github.com/fpgasystems/fpga-network-stack](https://github.com/fpgasystems/fpga-network-stack)  
+Coyote 是一个开源 shell，旨在简化数据中心和云系统中 FPGA 的部署, 提供了一整套多租户、多线程、重配置、网络（RDMA、TCP/IP）、虚拟内存（DRAM、HBM）以及 PCIe 与其他硬件（CPU、GPU）交互等标准系统抽象。总的来说，Coyote 的目标是简化应用程序部署流程，使开发人员能够专注于应用程序及其性能，而无需关注基础设施的开发。通过在硬件和软件层面提供清晰易用的接口，Coyote 允许所有人利用上述抽象进行定制化的加速卸载，并构建由多个 FPGA、GPU 和 CPU 组成的分布式异构计算机系统。此类系统的示例包括分布式推荐系统、AI 智能网卡或异构数据库引擎。
+<div align="center">
+<img src="https://github.com/fpgasystems/Coyote/raw/master/img/cyt_logo_light.png" alt="Coyote Diagram" width="256">
+</div>
+
+其提供了可扩展的网络协议栈, 如 TCP/IP、RoCEv2、UDP/IP, 支持高达 100Gbps 线速。
+
+> Ramhorst, Benjamin, Dario Korolija, Maximilian Jakob Heer, Jonas Dann, Luhao Liu, and Gustavo Alonso, "Coyote v2: Raising the Level of Abstraction for Data Center FPGAs", Proceedings of the ACM SIGOPS 31st Symposium on Operating Systems Principles (New York, NY, USA), SOSP 25, October 12, 639–54. https://doi.org/10.1145/3731569.3764845.
 
 #### More...
 
