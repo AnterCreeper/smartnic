@@ -25,7 +25,15 @@ export default defineConfig({
             {
               text: '01. 简介',
               link: 'docs/01-intro'
-            }
+            },
+            {
+              text: '02. 架构',
+              link: 'docs/02-arch'
+            },
+            {
+              text: '03. 开发套件',
+              link: 'docs/03-devkit'
+            },
           ]
         }
       ]
