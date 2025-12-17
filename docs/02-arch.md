@@ -2,7 +2,7 @@
 
 ## RMT Pipeline
 <div align="center">
-<img src="../assets/arch.png" alt="Arch" width="768">
+<img src="../assets/02/arch.png" alt="RMT Diagram" width="768">
 </div>
 RMT（Reconfigurable Match Table）主要由一个解析器和任意数量的匹配阶段组成。
 
